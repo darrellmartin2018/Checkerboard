@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author darrellmartin
  */
-public class Checkerboard extends Application {
+public class CheckerboardMain extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
