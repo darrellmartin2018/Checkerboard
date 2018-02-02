@@ -108,7 +108,7 @@ public class Checkerboard1 {
     public AnchorPane build(){
 //        int row = 0;
 //        int column = 0;
-        Color color = Color.RED;
+        Color color = darkColor;
         this.clear();
         for(int row=0;row<this.getNumRows();row++){
             for(int column=0;column<this.getNumCols();column++){
