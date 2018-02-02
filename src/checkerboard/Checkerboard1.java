@@ -7,6 +7,7 @@ package checkerboard;
 
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 
 /**
  *
@@ -26,6 +27,8 @@ public class Checkerboard1 {
         this.numCols = numCols;
         this.boardWidth = boardWidth;
         this.boardHeight = boardHeight;
+        this.lightColor = Color.RED;
+        this.darkColor = Color.BLACK;
     }
     
     public Checkerboard1(int numRows, int numCols, double boardWidth, double boardHeight, Color lightColor, Color darkColor){
@@ -35,11 +38,11 @@ public class Checkerboard1 {
     }
     
     public int getNumRows(){
-        return numRows;
+        return this.numRows;
     }
     
     public int getNumCols(){
-        return numCols;
+        return this.numCols;
     } 
     
     public double getWidth(){
@@ -94,6 +97,40 @@ public class Checkerboard1 {
     
     public void setDarkColor(Color darkColor){
         this.darkColor = darkColor;
+    }
+    
+    public void clear() {
+        if(anchorPane != null){
+            anchorPane.getChildren().clear();
+        }
+    }
+    
+    public AnchorPane build(){
+//        int row = 0;
+//        int column = 0;
+        Color color = Color.RED;
+        this.clear();
+        for(int row=0;row<this.getNumRows();row++){
+            for(int column=0;column<this.getNumCols();column++){
+                Rectangle rectangle = new Rectangle(getRectangleWidth(), getRectangleHeight(), color = switchColors(color));
+                this.anchorPane.getChildren().add(rectangle);
+                rectangle.setTranslateX(getRectangleWidth()*row);
+                rectangle.setTranslateY(getRectangleHeight()*column);
+            }
+            if(this.numRows % 2 == 0){
+                color = switchColors(color);
+            }
+        }
+        return anchorPane;
+    }
+    
+    private Color switchColors(Color color){
+        if(color == darkColor){
+            return lightColor;
+        }
+        else{
+            return darkColor;
+        }
     }
     
 }   
