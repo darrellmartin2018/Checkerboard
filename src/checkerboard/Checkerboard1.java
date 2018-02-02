@@ -38,11 +38,11 @@ public class Checkerboard1 {
     }
     
     public int getNumRows(){
-        return this.numRows;
+        return numRows;
     }
     
     public int getNumCols(){
-        return this.numCols;
+        return numCols;
     } 
     
     public double getWidth(){
@@ -106,8 +106,7 @@ public class Checkerboard1 {
     }
     
     public AnchorPane build(){
-//        int row = 0;
-//        int column = 0;
+
         Color color = darkColor;
         this.clear();
         for(int row=0;row<this.getNumRows();row++){
