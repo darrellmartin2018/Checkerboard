@@ -68,4 +68,32 @@ public class Checkerboard1 {
         return Math.ceil(this.boardHeight / this.numRows);
     }
     
-}
+    public void setBoard(AnchorPane anchorPane){
+        this.anchorPane = anchorPane;
+    }
+    
+    public void setNumRows(int numRows){
+        this.numRows = numRows;
+    }
+    
+    public void setNumCols(int numCols){
+        this.numCols = numCols;
+    }
+    
+    public void setBoardWidth(double boardWidth){
+        this.boardWidth = boardWidth;
+    }
+    
+    public void setBoardHeight(double boardHeight){
+        this.boardHeight = boardHeight;
+    }
+    
+    public void setLightColor(Color lightColor){
+        this.lightColor = lightColor;
+    }
+    
+    public void setDarkColor(Color darkColor){
+        this.darkColor = darkColor;
+    }
+    
+}   
