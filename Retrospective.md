@@ -8,7 +8,7 @@
 ##### I think that I met the requirements pretty well.  When completing the challenges, I made sure to meet all requirements to ensure that I would recieve a full grade and not miss points.
 
 ### 4. How well does your solution match the posted solution? What is different?
-#####
+##### For the most part, much of my solution is very similar to the posted solution.  Obviously there are going to be some differences in coding technique as well as how some of the aspects and functions are handled, but for the most part, they are pretty similar.  The SAX parser is definitely a lot different, though.  
 
 ### 5. How could you improve going forward? What don't you still understand that was required for the challenge?
-#####
+##### I think to improve going forward, I could spend a lot more time doing some research into possibly better solutions.  I think that what I did wasn't wrong, I just think that it maybe could have been done better or more efficiently.  Honestly, I still don't entirely understand a proper SAX parser.  For some reason, the concepts are still a little tough for me to grasp, so I think going forward, I would want to understand something like that much more before I would try to conquer something like this again.
